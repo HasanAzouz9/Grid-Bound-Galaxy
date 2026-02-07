@@ -14,39 +14,16 @@ class LevelComponent extends World with RiverpodComponentMixin {
   final GameLevelConfiguration levelConfig;
   final int tileSize = 128;
 
-  LevelComponent({required this.levelConfig});
+  LevelComponent({required this.levelConfig}) : super(priority: 11);
 
   @override
   onLoad() async {
     await super.onLoad();
     final pathLibrary = await TmxPathExtractor.getPathsFromTmx(levelConfig.mapPath);
-
-    level = await TiledComponent.load(
-      levelConfig.mapPath,
-      Vector2.all(tileSize.toDouble()),
-      // Set a base priority for the ground/path
-      priority: 0,
-    );
-
-    // 1. Hide the building blocks from the base map component
-    level.tileMap.getLayer<TileLayer>('building_blocks')?.visible = false;
-
-    // 2. Create a separate component to render ONLY that layer at a higher priority
-    final buildingBlocksLayer = await TiledComponent.load(
-      levelConfig.mapPath,
-      Vector2.all(tileSize.toDouble()),
-      priority: 20, // High priority so it covers explosions (pri 1) and enemies (pri 10)
-    );
-
-    // 3. Hide everything EXCEPT building_blocks in the second component
-    for (var layer in buildingBlocksLayer.tileMap.renderableLayers) {
-      if (layer.layer.name != 'building_blocks') {
-        layer.layer.visible = false;
-      }
-    }
+    level = await TiledComponent.load(levelConfig.mapPath, Vector2.all(tileSize.toDouble()));
+    children.register<TowerComponent>();
 
     add(level);
-    add(buildingBlocksLayer);
     add(WaveComponent(waves: levelConfig.waves, pathLibrary: pathLibrary));
   }
 
