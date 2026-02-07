@@ -1,0 +1,110 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "level_02.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "C:/Users/hasan/Documents/flutter projects/gridbound_galaxy/assets_source/backgroud.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "level_01.tmx": {
+            "scale": 0.125,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 2288,
+                "y": 1276
+            }
+        },
+        "level_01.tmx#backgroud": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "level_01.tmx#background2": {
+            "scaleInDock": 1
+        },
+        "level_01.tmx#broken": {
+            "scaleInDock": 1
+        },
+        "level_01.tmx#buildable blocks": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "level_01.tmx#fence": {
+            "scaleInDock": 1
+        },
+        "level_01.tmx#gone": {
+            "scaleInDock": 1
+        },
+        "level_01.tmx#green_pipes": {
+            "scaleInDock": 1
+        },
+        "level_01.tmx#pipes": {
+            "scaleInDock": 1
+        },
+        "level_02.tmx": {
+            "expandedObjectLayers": [
+                6
+            ],
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 273,
+                "y": 2648.5
+            }
+        },
+        "level_02.tmx#backgroud": {
+            "scaleInDock": 1
+        },
+        "level_02.tmx#background2": {
+            "scaleInDock": 1
+        },
+        "level_02.tmx#broken": {
+            "scaleInDock": 1
+        },
+        "level_02.tmx#buildable blocks": {
+            "scaleInDock": 1
+        },
+        "level_02.tmx#fence": {
+            "scaleInDock": 1
+        },
+        "level_02.tmx#gone": {
+            "scaleInDock": 1
+        },
+        "level_02.tmx#green_pipes": {
+            "scaleInDock": 1
+        },
+        "level_02.tmx#pipes": {
+            "scaleInDock": 1
+        }
+    },
+    "last.imagePath": "C:/Users/hasan/Documents/flutter projects/gridbound_galaxy/assets/images/tilesets",
+    "map.height": 25,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 128,
+    "map.tileWidth": 128,
+    "map.width": 40,
+    "openFiles": [
+        "level_01.tmx",
+        "level_02.tmx"
+    ],
+    "project": "grid_bound_galaxy.tiled-project",
+    "property.type": "object",
+    "recentFiles": [
+        "level_01.tmx",
+        "level_02.tmx",
+        "C:/Users/hasan/Documents/flutter projects/gridbound_galaxy/assets_source/backgroud.tsx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 128,
+        "width": 128
+    }
+}

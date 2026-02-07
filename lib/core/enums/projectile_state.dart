@@ -1,0 +1,4 @@
+enum ProjectileState {
+  moving,
+  hit,
+}

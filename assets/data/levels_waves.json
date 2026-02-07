@@ -1,0 +1,81 @@
+{
+  "level_01": {
+    "map": "level_01.tmx",
+    "width": "4480",
+    "height": "2560",
+    "playerHealth": 20,
+    "playerGold": 100,
+    "waves": [
+      {
+        "delay": 2,
+        "groups": [
+          {
+            "delay": 0,
+            "spawns": [
+              { "enemyId": "classical", "count": 10, "path": "path_3" }
+            ]
+          },
+          {
+            "delay": 0,
+            "spawns": [
+              { "enemyId": "nork", "count": 10, "path": "path_3" }
+            ]
+          },
+          {
+            "delay": 0,
+            "spawns": [
+              { "enemyId": "iron_plaster_lv3", "count": 10, "path": "path_3" }
+            ]
+          },
+          {
+            "delay": 0,
+            "spawns": [
+              { "enemyId": "small_bite", "count": 10, "path": "path_3" }
+            ]
+          },
+           {
+            "delay": 3,
+            "spawns": [
+              { "enemyId": "iron_plaster_lv2", "count": 10, "path": "path_2" }
+            ]
+          }
+        ]
+      },
+       {
+        "delay": 3,
+        "groups": [
+          {
+            "delay": 0,
+            "spawns": [
+              { "enemyId": "iron_plaster_lv1", "count": 10, "path": "path_3" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+   "level_02": {
+    "map": "level_02.tmx",
+    "width": "5120",
+    "height": "3200",
+    "playerHealth": 20,
+    "playerGold": 100,
+    "waves": [
+      {
+        "delay": 3,
+        "groups": [
+          {
+            "delay": 0,
+            "spawns": [
+              { "enemyId": "nork", "count": 10, "path": "lane_1_path_3" },
+              { "enemyId": "nork", "count": 10, "path": "lane_2_path_3" },
+              { "enemyId": "iron_plaster_lv1", "count": 10, "path": "lane_2_path_1" },
+              { "enemyId": "iron_plaster_lv1", "count": 10, "path": "lane_2_path_2" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+

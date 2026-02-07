@@ -1,0 +1,1 @@
+enum EnemyState { idle, moving }
