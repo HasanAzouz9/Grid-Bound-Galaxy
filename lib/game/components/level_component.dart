@@ -35,7 +35,7 @@ class LevelComponent extends World with RiverpodComponentMixin {
     final buildingBlocksLayer = await TiledComponent.load(
       levelConfig.mapPath,
       Vector2.all(tileSize.toDouble()),
-      priority: 3, // High priority so it covers explosions (pri 1) and enemies (pri 10)
+      priority: 20, // High priority so it covers explosions (pri 1) and enemies (pri 10)
     );
 
     // 3. Hide everything EXCEPT building_blocks in the second component
